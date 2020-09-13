@@ -1,0 +1,21 @@
+.severe {
+    background-color: red;
+}
+
+.moderate {
+    background-color: yellow;
+}
+
+.favourable {
+    background-color: green;
+}
+
+.card-deck {
+    color: white;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
