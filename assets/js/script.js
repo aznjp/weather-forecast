@@ -25,7 +25,6 @@ function searchHandler(event) {
         alert("Please put in valid city")
     } else {
         //push the input(city) into the empty array and then set the items into the local storage with the key List 
-        var city = capitalWord(searchInput.value.trim());
         cityList.push(city);
         localStorage.setItem("List", JSON.stringify(cityList));
         // The appending function then starts with the parameter cityList for the array and pull those values out 
@@ -88,7 +87,6 @@ function displayWeather(city, weatherData, UVdata) {
     document.querySelector(".card-deck").innerHTML = "";
 
     var weatherArray = weatherData.list;
-    console.log(weatherArray)
 
     var mainTemp = weatherData.list[0].main.temp;
     var mainHumid = weatherData.list[0].main.humidity;
