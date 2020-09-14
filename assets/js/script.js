@@ -129,6 +129,7 @@ function displayWeather(city, weatherData, UVdata) {
 
     var cardDeckEl = document.querySelector(".card-deck")
 
+
     //The for loop is utilized to append all of the cards into the card deck
     //The array holds 40 objects which holds information for every 3 hours for 5 days (Thus i+=8 for the same time every day)
     for (var i = 0; i < weatherArray.length; i += 8) {
